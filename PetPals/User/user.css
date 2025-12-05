@@ -1,0 +1,335 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Spartan' ,sans-serif;
+  
+}
+.navbar
+{
+    width: 100%;
+    top:0;
+    left:0;
+    transition: 0.6s;;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: #9aa5a5; */
+    background-color: #ffffff;
+    height:15px;
+    padding: 40px 10px;
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.sub-menu-wrap
+{
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 340px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.5s;
+}
+
+.sub-menu-wrap.open-menu
+{
+    max-height: 400px;
+}
+
+.sub-menu
+{
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+}
+
+.user-info
+{
+    display: flex;
+    align-items: center;
+}
+
+.user-info h3
+{
+    font-weight: 500;
+}
+
+.user-info img
+{
+    width: 60px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.sub-menu hr
+{
+    border: 0;
+    height: 1px;
+    width: 100%;
+    background: #ccc;
+    margin: 15px 0 10px;
+}
+
+.sub-menu-link
+{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #525252;
+    margin: 12px 0;
+}
+
+.sub-menu-link p
+{
+    width: 100%;
+}
+
+.sub-menu-link img
+{
+    width: 40px;
+    background-color: #e5e5e5;
+    border-radius: 50%;
+    padding: 8px;
+    margin-right: 15px;
+}
+
+.sub-menu-link span
+{
+    font-size: 22px;
+    transition: transform 0.5s;
+}
+
+.sub-menu-link:hover span
+{
+    transform: translateX(5px);
+}
+
+.sub-menu-link:hover p
+{
+    font-weight: 600;
+}
+
+.logo
+{
+    width: 100px;
+    cursor: pointer;
+    margin-left: 75%;
+}
+
+.logo1
+{
+    width: 100px;
+    cursor: pointer;
+    
+}
+
+
+.navbar ul li
+{
+    list-style: none;
+    display: inline-flex;
+    margin: 0 30px;
+    position: relative;
+}
+.navbar ul li.user-pic
+{
+    width: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left: 30px;
+}
+
+.navbar ul li a 
+{
+    cursor: pointer;
+    text-decoration: none;
+    color: #000000;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.navbar ul li i
+{
+    cursor: pointer;
+    text-decoration: none;
+    color: #000000;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.navbar ul li:hover::after
+{
+    width: 40%;
+}
+
+.navbar ul li i:hover,
+.navbar li i.active
+.navbar li a:hover,
+.navbar li a.active
+{
+    transition: 0.3s;
+}
+
+.navbar li a.active::after,
+.navbar li a:hover::after
+{
+    content: "";
+    width: 50%;
+    height: 2px;
+    background-color: #000000;
+    position: absolute;
+    bottom: -4px;
+    left: 2px;
+    transition: 0.3s;
+}
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 105%;
+    height: 105%;
+    background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0),rgba(6, 6, 6, 0.75)), url(./Images/bg6.png);
+    filter: blur(8px); /* Apply the blur effect */
+    z-index: -1;
+}
+
+
+.container {
+    margin-top: 100px;
+    /* margin-bottom: 100px; */
+    margin-left: 290px;
+    align-items: center;
+    transition: transform 1s;
+}
+
+.checkoutLayout {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    padding: 20px;
+    margin-top: 80px;
+}
+
+.checkoutLayout .right {
+    background-color: #fff;
+    margin-right: 75px;
+    border-radius: 20px;
+    padding: 40px;
+    color: #000;
+    box-shadow: 0 10px 20px #94949455;
+}
+
+.checkoutLayout .right h3 {
+    margin-bottom: 15px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.checkoutLayout .right input
+{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.checkoutLayout .right .return {
+    border-top: 1px solid #d7d8dc;
+}
+
+.checkoutLayout form h1,
+.checkoutLayout form .group:nth-child(-n+3) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.checkoutLayout form input,
+.checkoutLayout form select {
+    width: 100%;
+    padding: 15px 20px;
+    box-sizing: border-box;
+    border-radius: 13px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: none;
+    border: 1px solid #c9c8c8;
+    background-color: #ffffff;
+    /* box-shadow: 0 10px 20px #dcdbdb55;*/
+    color: #000;
+}
+
+.checkoutLayout .right
+{
+    margin-top: 0;
+}
+
+.checkoutLayout .right .return
+{
+    margin-top: 10px;
+}
+.checkoutLayout .right .return .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.checkoutLayout .right .sahii
+{
+    display: flex;
+    flex: 1;
+    padding: 10px 0;
+}
+
+.checkoutLayout .right .sahii .group:nth-child(1)
+{
+    position: sticky;
+    
+}
+.checkoutLayout .right .sahii .group:nth-child(1) input
+{
+    width: 275px;
+}
+.checkoutLayout .right .sahii .group:nth-child(2)
+{
+    margin-left: 30px;
+}
+.checkoutLayout .right .sahii .group:nth-child(2) input
+{
+    width: 275px;
+}
+
+.checkoutLayout .right .return .row div:nth-child(2) {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.buttonCheckout {
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    /* background-color: #b7aa7c; */
+    background-color: #cd8a57;
+    margin-top: 30px;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+    transition: all ease 0.5s;
+}
+
+.buttonCheckout:hover {
+    transform: scale(1.02);
+}
+
+

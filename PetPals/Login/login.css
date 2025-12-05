@@ -1,0 +1,274 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Spartan' ,sans-serif;
+  backdrop-filter: blur(8px);
+}
+
+.navbar
+{
+    width: 100%;
+    top:0;
+    left:0;
+    transition: 0.6s;;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: #9aa5a5; */
+    background-color: #ffffff;
+    height:15px;
+    padding: 40px 10px;
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.10);
+}
+
+.sub-menu-wrap
+{
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 340px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.5s;
+}
+
+.sub-menu-wrap.open-menu
+{
+    max-height: 400px;
+}
+
+.sub-menu
+{
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+}
+
+.user-info
+{
+    display: flex;
+    align-items: center;
+}
+
+.user-info h3
+{
+    font-weight: 500;
+}
+
+.user-info img
+{
+    width: 60px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.sub-menu hr
+{
+    border: 0;
+    height: 1px;
+    width: 100%;
+    background: #ccc;
+    margin: 15px 0 10px;
+}
+
+.sub-menu-link
+{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #525252;
+    margin: 12px 0;
+}
+
+.sub-menu-link p
+{
+    width: 100%;
+}
+
+.sub-menu-link img
+{
+    width: 40px;
+    background-color: #e5e5e5;
+    border-radius: 50%;
+    padding: 8px;
+    margin-right: 15px;
+}
+
+.sub-menu-link span
+{
+    font-size: 22px;
+    transition: transform 0.5s;
+}
+
+.sub-menu-link:hover span
+{
+    transform: translateX(5px);
+}
+
+.sub-menu-link:hover p
+{
+    font-weight: 600;
+}
+
+.logo
+{
+    width: 100px;
+    cursor: pointer;
+    margin-top: 1%;
+    margin-left: 75%;
+    
+}
+
+.logo1
+{
+    width: 100px;
+    cursor: pointer;
+    
+}
+
+
+.navbar ul li
+{
+    list-style: none;
+    display: inline-flex;
+    margin: 0 30px;
+    position: relative;
+    
+}
+.navbar ul li.user-pic
+{
+    width: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left: 30px;
+}
+
+.navbar ul li a 
+{
+    cursor: pointer;
+    text-decoration: none;
+    color: #000000;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.navbar ul li i
+{
+    cursor: pointer;
+    text-decoration: none;
+    color: #000000;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.navbar ul li:hover::after
+{
+    width: 40%;
+}
+
+.navbar ul li i:hover,
+.navbar li i.active
+.navbar li a:hover,
+.navbar li a.active
+{
+    transition: 0.3s;
+}
+
+.navbar li a.active::after,
+.navbar li a:hover::after
+{
+    content: "";
+    width: 50%;
+    height: 2px;
+    background-color: #000000;
+    position: absolute;
+    bottom: -4px;
+    left: 2px;
+    transition: 0.3s;
+}
+
+body
+{
+    background-image: linear-gradient(rgba(0, 0, 0, 0),rgba(6, 6, 6, 0.75)), url(./Images/bg6.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.card-body {
+    max-width: 500px;
+    margin: auto;
+    margin-top: 80px;
+    padding: 40px;
+    background-color:#fff;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px rgba(94, 93, 93, 0.1);
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input {
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+  }
+  
+  .btn {
+    padding: 10px 15px;
+    background-color: #7b6239;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+  }
+  
+  .btn:hover {
+    background-color: #363a3e;
+  }
+
+  .switch-text {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .switch-text a {
+    color: #32667a;
+    text-decoration: none;
+  }
+  
+  .switch-text a:hover {
+    text-decoration: none;
+    scale: 1.2;
+  }
